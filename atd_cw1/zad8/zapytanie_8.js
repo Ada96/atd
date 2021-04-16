@@ -1,0 +1,1 @@
+db.people.updateMany({"city" : "Moscow"},{$set: {"city":"Moskwa"}})
