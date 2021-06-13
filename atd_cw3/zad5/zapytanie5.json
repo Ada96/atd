@@ -1,0 +1,3 @@
+MATCH (:Movie { title: "The Matrix" })<-[:ACTED_IN]-(actor)-[:ACTED_IN]->(movie)
+RETURN movie.title, collect(actor.name), count(*) AS count
+ORDER BY count DESC;

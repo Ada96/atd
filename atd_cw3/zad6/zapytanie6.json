@@ -1,0 +1,1 @@
+MATCH (actor:Person)-[roles:ACTED_IN]->(movie) WITH actor, count(roles) AS movies RETURN actor, movies

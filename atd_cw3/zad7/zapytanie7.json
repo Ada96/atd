@@ -1,0 +1,1 @@
+MATCH (actor:Person)-[:WROTE]->(movie:Movie) WITH actor, movie MATCH (actor)-[:DIRECTED]->(movie) RETURN actor,movie
