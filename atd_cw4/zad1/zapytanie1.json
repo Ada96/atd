@@ -1,0 +1,1 @@
+MATCH (startpoint:town {name: "Darjeeling"}), (endpoint:peak {name: "Sandakphu"}) MATCH paths = allshortestPaths((startpoint)-[*]->(endpoint)) RETURN paths

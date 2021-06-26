@@ -1,0 +1,2 @@
+MATCH (startpoint:town {name: "Darjeeling"}), (endpoint:peak {name: "Sandakphu"}), paths = allshortestPaths((startpoint)-[*]->(endpoint))
+WHERE ALL (r IN relationships(paths) WHERE r.winter = "true") RETURN paths

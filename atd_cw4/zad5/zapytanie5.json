@@ -1,0 +1,4 @@
+MATCH paths = (startpoint:Airport {name:"LAX"})<-[r:ORIGIN]-(:Flight)-[b:ORIGIN|DESTINATION*..10]->(endpoint:Airport)
+WHERE REDUCE (acc = 0, a IN [x IN NODES(paths) WHERE 'Flight' IN LABELS(x)] |
+acc + [(a)<-[:ASSIGN]-(ticket) | ticket.price][0]) < 3000
+RETURN paths

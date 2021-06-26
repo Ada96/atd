@@ -1,0 +1,6 @@
+MATCH paths = (startpoint:town {name: "Darjeeling"})-[r*]->(endpoint:peak {name: "Sandakphu"})
+UNWIND r as rel
+WITH paths, COLLECT(rel.distance) AS distances
+WITH paths, reduce(acc = 0, d in distances | acc + d) as dist
+RETURN paths, dist
+ORDER BY dist ASC

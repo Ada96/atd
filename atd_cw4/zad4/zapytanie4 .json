@@ -1,0 +1,4 @@
+MATCH (a:Airport)<-[:ORIGIN]-(f:Flight)
+WITH a as lotnisko, count(f) as loty
+RETURN lotnisko, loty
+ORDER BY loty DESC

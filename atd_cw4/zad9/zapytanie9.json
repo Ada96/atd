@@ -1,0 +1,2 @@
+MATCH (a:Airport)-[:ORIGIN|:DESTINATION]-(f:Flight)    
+RETURN distinct f.airline as linialotnicza, count(distinct a.name) as polaczenia ORDER BY count(distinct a.name)  DESC

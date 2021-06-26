@@ -1,0 +1,5 @@
+MATCH (startpoint: Airport{name:'LAX'}), (endpoint:Airport{name:'DAY'})
+WITH startpoint, endpoint
+MATCH p = (startpoint)<-[:ORIGIN|DESTINATION*..9]->(endpoint)
+WITH p, endpoint, REDUCE (a = 0, b IN [c IN RANGE(1, LENGTH(p), 2) | NODES(p)[c]] | a + [(b)<-[:ASSIGN]-(ticket) | ticket.price][0]) AS price ORDER BY price ASC LIMIT 1
+RETURN p, endpoint, price
