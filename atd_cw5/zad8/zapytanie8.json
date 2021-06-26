@@ -1,0 +1,1 @@
+curl -i -XPOST -H "Content-Type: application/json" -d "{'imie': 'TEST'}" http://localhost:8098/buckets/s14164/keys -i

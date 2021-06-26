@@ -1,0 +1,1 @@
+curl -i -XDELETE http://localhost:8098/buckets/s14164/keys/HHGW4EbDRDygzuE6SknWLJyJFGQ

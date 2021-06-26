@@ -1,0 +1,1 @@
+curl -i -XGET http://localhost:8098/buckets/s14164/keys/mkowalik

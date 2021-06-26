@@ -1,0 +1,9 @@
+curl -i -XPUT -H "Content-Type: application/json" -d "{'imie': 'Michal', 'nazwisko': 'Kowalik', 'czyposlubie': Prawda, 'wzrost': 190, 'znaki szczegolne': null}" http://localhost:8098/buckets/s14164/keys/mkowalik
+curl -i -XPUT -H "Content-Type: application/json" -d "{'imie': 'Anna', 'nazwisko': 'Nowak', 'czyposlubie': Prawda, 'wzrost': 171, 'znaki szczegolne': 'tatuaze'}" http://localhost:8098/buckets/s14164/keys/anowak
+curl -i -XPUT -H "Content-Type: application/json" -d "{'imie': 'Wojciech', 'nazwisko': 'Polak', 'czyposlubie': Fałsz, 'wzrost': 163, 'znaki szczegolne': null}" http://localhost:8098/buckets/s14164/keys/wpolak
+curl -i -XPUT -H "Content-Type: application/json" -d "{'imie': 'Joanna', 'nazwisko': 'Antos', 'czyposlubie': Fałsz, 'wzrost': 178, 'znaki szczegolne': 'blizna'}" http://localhost:8098/buckets/s14164/keys/jantos
+curl -i -XPUT -H "Content-Type: application/json" -d "{'imie': 'Paulina', 'nazwisko': 'Matyskiel', 'czyposlubie': Prawda, 'wzrost': 157, 'znaki szczegolne': null}" http://localhost:8098/buckets/s14164/keys/pmatyskiel
+
+
+
+
