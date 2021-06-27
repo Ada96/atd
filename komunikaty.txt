@@ -1,9 +1,0 @@
-Response:  204    -------Create document p1
-Response:  200    -------Get document:  {'surname': 'Nowak', 'name': 'John', 'sex': 'Male', 'characteristic': {'height': '180', 'weight': '86', 'eyecolour': 'green'}} 
-
-Response:  204    -------Create document p2
-Response:  200    -------Get modified document:  {'surname': 'Nowak', 'name': 'Amy', 'sex': 'Female', 'characteristic': {'height': '166', 'weight': '71', 'eyecolour': 'blue'}} 
-
-Response:  204    -------Delete document
-Response:  404    -------Get deleted document
-Error when displaying document
